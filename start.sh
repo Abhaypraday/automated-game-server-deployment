@@ -13,3 +13,10 @@ taskset -c 0 screen -A -m -d -S css ./srcds_run -console -game cstrike -nomaster
 echo ..:: Server is Running ::..
 sleep 1
 screen -r css
+echo "========================"
+echo "Simulated CSS Server Start"
+echo "========================"
+# simulate server start; replace with real srcds_run later
+echo "Listening on UDP port 27015"
+# keep container alive for demo
+tail -f /dev/null
