@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Clone') {
-      steps { git url: 'https://github.com/<YOUR_USERNAME>/automated-game-server-deployment.git', branch: 'main' }
+      steps { git url: 'https://github.com/Abhaypraday/automated-game-server-deployment.git', branch: 'main' }
     }
     stage('Build image') {
       steps { sh 'docker build -t css-server:latest .' }
